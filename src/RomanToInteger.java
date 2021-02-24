@@ -22,6 +22,7 @@ public class RomanToInteger {
      * Given string, convert string from Roman Numbers to Decimal Numbers.
      * @param s Parameter string to be converted to Decimal Numbers.
      * @return Input string converted as Decimal.
+     * Source: https://leetcode.com/problems/roman-to-integer/discuss/589035/My-Java-Solution
      */
     public static int romanToInt(String s) {
         Map<Character, Integer> map = new HashMap<>();

@@ -17,6 +17,7 @@ public class ReverseInteger {
      * If the value goes outside of the integer range [-2**31, 2**31 - 1] then return 0.
      * @param x Signed 32-bit Integer Value to be reversed.
      * @return Reversed value of 32-bit Integer, or if out of range - 0.
+     * Source: https://leetcode.com/problems/reverse-integer/solution/
      */
     public static int reverse(int x) {
 
