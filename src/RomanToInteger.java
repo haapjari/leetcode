@@ -1,13 +1,16 @@
+import java.util.Map;
+import java.util.HashMap;
+
+/**
+ * @author haapjari
+ * @version 24.2.2021
+ * LeetCode Challenge: Roman to Integer (https://leetcode.com/problems/roman-to-integer/)
+ */
 public class RomanToInteger {
 
-     /*
-            Given a roman numeral, convert it to an integer.
-            I can be placed before V (5) and (X) (10) to make 4 and 9.
-            X can be placed before L (50) and (100) to make 40 and 90.
-            C can be placed before D (500) and M (1000) to make 400 and 900.
-
+    /**
+     * @param args not used
      */
-
     public static void main(String[] args) {
         String s = "III";
         String s2 = "IV";
@@ -15,30 +18,36 @@ public class RomanToInteger {
         System.out.println(romanToInt(s2));
     }
 
+    /**
+     * Given string, convert string from Roman Numbers to Decimal Numbers.
+     * @param s Parameter string to be converted to Decimal Numbers.
+     * @return Input string converted as Decimal.
+     */
     public static int romanToInt(String s) {
-        int[] map = new int[256];
+        Map<Character, Integer> map = new HashMap<>();
 
-        map['I'] = 1;
-        map['V'] = 5;
-        map['X'] = 10;
-        map['L'] = 50;
-        map['C'] = 100;
-        map['D'] = 500;
-        map['M'] = 1000;
+        map.put('I',1);
+        map.put('V',5);
+        map.put('X',10);
+        map.put('L',50);
+        map.put('C',100);
+        map.put('D',500);
+        map.put('M',1000);
 
-        int ret = 0, pre = 1;
+        char [] str = s.toCharArray();
 
-        for (int i = s.length()-1; i >= 0; --i) {
+        int decimal = 0;
+        int roman = 0;
 
-            int cur = map[s.charAt(i)];
-            if (cur < pre) ret -= cur;
+        for ( int i = str.length - 1; i >= 0; i--) {
 
-            else {
-                pre = cur;
-                ret += cur;
+            if ( map.get(str[i]) < roman ) {
+                decimal -= map.get(str[i]);
+            } else {
+                decimal += map.get(str[i]);
             }
+            roman = map.get(str[i]);
         }
-
-        return ret;
+        return decimal;
     }
 }

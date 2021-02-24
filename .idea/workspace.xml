@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1a3332f-d780-44b7-bc16-c46a48a043ca" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/PalindromeNumber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LeetCode.iml" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LeetCode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PalindromeNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PalindromeNumber.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/RemoveDuplicatesFromSortedArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RemoveDuplicatesFromSortedArray.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ReverseInteger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ReverseInteger.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/RomanToInteger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RomanToInteger.java" afterDir="false" />
@@ -150,11 +149,22 @@
       <workItem from="1613926962621" duration="2062000" />
       <workItem from="1613940147293" duration="601000" />
       <workItem from="1613994542543" duration="7747000" />
-      <workItem from="1614179512648" duration="860000" />
+      <workItem from="1614179512648" duration="2294000" />
     </task>
+    <task id="LOCAL−00001" summary="Added completed challenges to repository and completed &quot;RomanToInteger&quot; Challenge.">
+      <created>1614180621092</created>
+      <option name="number" value="LOCAL−00001" />
+      <option name="presentableId" value="LOCAL−00001" />
+      <updated>1614180621092</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added completed challenges to repository and completed &quot;RomanToInteger&quot; Challenge." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added completed challenges to repository and completed &quot;RomanToInteger&quot; Challenge." />
   </component>
 </project>
