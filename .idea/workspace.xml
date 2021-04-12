@@ -2,10 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1a3332f-d780-44b7-bc16-c46a48a043ca" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/DefangIP.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GreatestNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LongestCommonPrefix.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/RunningSumOf1DArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ShuffleTheArray.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ReverseInteger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ReverseInteger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RomanToInteger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RomanToInteger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/PalindromeNumber.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/PalindromeNumber.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/RemoveDuplicatesFromSortedArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/RemoveDuplicatesFromSortedArray.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/ReverseInteger.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/ReverseInteger.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/RomanToInteger.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/RomanToInteger.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/TwoSum.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/TwoSum.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,18 +46,30 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="Application.RomanToInteger">
-    <configuration name="LeetCode" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="LeetCode" />
+  <component name="RunManager" selected="Application.GreatestNumber">
+    <configuration name="DefangIP" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DefangIP" />
       <module name="leetcode" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RomanToInteger" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="RomanToInteger" />
+    <configuration name="GreatestNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="GreatestNumber" />
+      <module name="leetcode" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LongestCommonPrefix" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LongestCommonPrefix" />
+      <module name="leetcode" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RunningSumOf1DArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="RunningSumOf1DArray" />
       <module name="leetcode" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -76,63 +95,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="leetcode" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="leetcode" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="Application.LeetCode" />
       <item itemvalue="Application.TwoSum" />
-      <item itemvalue="Application.RomanToInteger" />
+      <item itemvalue="Application.LongestCommonPrefix" />
+      <item itemvalue="Application.RunningSumOf1DArray" />
+      <item itemvalue="Application.DefangIP" />
+      <item itemvalue="Application.GreatestNumber" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.RomanToInteger" />
+        <item itemvalue="Application.GreatestNumber" />
+        <item itemvalue="Application.DefangIP" />
+        <item itemvalue="Application.RunningSumOf1DArray" />
+        <item itemvalue="Application.LongestCommonPrefix" />
         <item itemvalue="Application.TwoSum" />
-        <item itemvalue="Application.LeetCode" />
       </list>
     </recent_temporary>
   </component>
@@ -147,7 +123,15 @@
       <workItem from="1613926962621" duration="2062000" />
       <workItem from="1613940147293" duration="601000" />
       <workItem from="1613994542543" duration="7747000" />
-      <workItem from="1614179512648" duration="2552000" />
+      <workItem from="1614179512648" duration="2702000" />
+      <workItem from="1614256786018" duration="4161000" />
+      <workItem from="1614364962817" duration="91000" />
+      <workItem from="1614365087895" duration="3945000" />
+      <workItem from="1614369245612" duration="1202000" />
+      <workItem from="1617781795531" duration="2615000" />
+      <workItem from="1617901471400" duration="1874000" />
+      <workItem from="1617962933662" duration="2587000" />
+      <workItem from="1618236250521" duration="1147000" />
     </task>
     <task id="LOCAL−00001" summary="Added completed challenges to repository and completed &quot;RomanToInteger&quot; Challenge.">
       <created>1614180621092</created>
