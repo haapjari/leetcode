@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1a3332f-d780-44b7-bc16-c46a48a043ca" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/DefangIP.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GreatestNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LongestCommonPrefix.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/RunningSumOf1DArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ShuffleTheArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MaxWealth.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/PalindromeNumber.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/PalindromeNumber.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/RemoveDuplicatesFromSortedArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/RemoveDuplicatesFromSortedArray.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/ReverseInteger.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/ReverseInteger.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/RomanToInteger.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/RomanToInteger.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/TwoSum.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/TwoSum.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +37,7 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="Application.GreatestNumber">
+  <component name="RunManager" selected="Application.MaxWealth">
     <configuration name="DefangIP" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="DefangIP" />
       <module name="leetcode" />
@@ -68,6 +59,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MaxWealth" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MaxWealth" />
+      <module name="leetcode" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="RunningSumOf1DArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="RunningSumOf1DArray" />
       <module name="leetcode" />
@@ -75,40 +73,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TwoSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="TwoSum" />
-      <module name="leetcode" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.TwoSum" />
       <item itemvalue="Application.LongestCommonPrefix" />
       <item itemvalue="Application.RunningSumOf1DArray" />
       <item itemvalue="Application.DefangIP" />
       <item itemvalue="Application.GreatestNumber" />
+      <item itemvalue="Application.MaxWealth" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MaxWealth" />
         <item itemvalue="Application.GreatestNumber" />
         <item itemvalue="Application.DefangIP" />
         <item itemvalue="Application.RunningSumOf1DArray" />
         <item itemvalue="Application.LongestCommonPrefix" />
-        <item itemvalue="Application.TwoSum" />
       </list>
     </recent_temporary>
   </component>
@@ -131,7 +120,8 @@
       <workItem from="1617781795531" duration="2615000" />
       <workItem from="1617901471400" duration="1874000" />
       <workItem from="1617962933662" duration="2587000" />
-      <workItem from="1618236250521" duration="1147000" />
+      <workItem from="1618236250521" duration="1983000" />
+      <workItem from="1618335332795" duration="759000" />
     </task>
     <task id="LOCAL−00001" summary="Added completed challenges to repository and completed &quot;RomanToInteger&quot; Challenge.">
       <created>1614180621092</created>
@@ -148,5 +138,16 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added completed challenges to repository and completed &quot;RomanToInteger&quot; Challenge." />
     <option name="LAST_COMMIT_MESSAGE" value="Added completed challenges to repository and completed &quot;RomanToInteger&quot; Challenge." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/MaxWealth.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
