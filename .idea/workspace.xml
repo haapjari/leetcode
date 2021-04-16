@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1a3332f-d780-44b7-bc16-c46a48a043ca" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/MaxWealth.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/ShuffleTheArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/ShuffleTheArray.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ShuffleTheArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ShuffleTheArray.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,9 +36,9 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
-  <component name="RunManager" selected="Application.MaxWealth">
+  <component name="RunManager" selected="Application.ShuffleTheArray">
     <configuration name="DefangIP" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="DefangIP" />
       <module name="leetcode" />
@@ -47,13 +48,6 @@
     </configuration>
     <configuration name="GreatestNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="GreatestNumber" />
-      <module name="leetcode" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LongestCommonPrefix" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LongestCommonPrefix" />
       <module name="leetcode" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -73,6 +67,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ShuffleTheArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ShuffleTheArray" />
+      <module name="leetcode" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -85,19 +86,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.LongestCommonPrefix" />
       <item itemvalue="Application.RunningSumOf1DArray" />
       <item itemvalue="Application.DefangIP" />
       <item itemvalue="Application.GreatestNumber" />
       <item itemvalue="Application.MaxWealth" />
+      <item itemvalue="Application.ShuffleTheArray" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ShuffleTheArray" />
         <item itemvalue="Application.MaxWealth" />
         <item itemvalue="Application.GreatestNumber" />
         <item itemvalue="Application.DefangIP" />
         <item itemvalue="Application.RunningSumOf1DArray" />
-        <item itemvalue="Application.LongestCommonPrefix" />
       </list>
     </recent_temporary>
   </component>
@@ -122,6 +123,10 @@
       <workItem from="1617962933662" duration="2587000" />
       <workItem from="1618236250521" duration="1983000" />
       <workItem from="1618335332795" duration="759000" />
+      <workItem from="1618397576660" duration="2338000" />
+      <workItem from="1618500084987" duration="18000" />
+      <workItem from="1618500173779" duration="89000" />
+      <workItem from="1618500402228" duration="2562000" />
     </task>
     <task id="LOCAL−00001" summary="Added completed challenges to repository and completed &quot;RomanToInteger&quot; Challenge.">
       <created>1614180621092</created>
@@ -147,6 +152,10 @@
           <line>37</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
