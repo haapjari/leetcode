@@ -1,5 +1,10 @@
-# LeetCode Submissions (https://leetcode.com/marjakuusi/
+# LeetCode Submissions 
+
+Profile: https://leetcode.com/haapjari
+
+## Completed
+
+- https://leetcode.com/problems/two-numbers/
+- https://leetcode.com/problems/roman-to-integer/
 
 ---
-
-This work is not completely my own, I am using these resources as learning material and might take some solutions from already published sources in order to debug the code and learn how it works, sources are involved in comments.
