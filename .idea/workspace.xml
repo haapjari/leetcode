@@ -1,162 +1,109 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e1a3332f-d780-44b7-bc16-c46a48a043ca" name="Default Changelist" comment="">
+    <list default="true" id="e264ed39-4358-42d6-ad26-7c9db60f68e1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/leetcode.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/ShuffleTheArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/ShuffleTheArray.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ShuffleTheArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ShuffleTheArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/__debug_bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/palindromenumber/palindromenumber.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/twosum/twosum.go" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1oneoajGHektbtQEZXG8UXgsGqj" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2PTvtxkCF7Ns9DejDv1Yqo8xHNs" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
-  </component>
-  <component name="RunManager" selected="Application.ShuffleTheArray">
-    <configuration name="DefangIP" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="DefangIP" />
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/haspe/Development/leetcode&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  }
+}</component>
+  <component name="RunManager" selected="Python tests.Python tests for test_two_sum.TwoSumTestCase.test_1">
+    <configuration name="Python tests for test_add_two_numbers.TwoAddTwoNumbers.test_1" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="leetcode" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/add_two_numbers" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_add_two_numbers.TwoAddTwoNumbers.test_1&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
     </configuration>
-    <configuration name="GreatestNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="GreatestNumber" />
+    <configuration name="Python tests for test_two_sum.TwoSumTestCase" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="leetcode" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/two_sum" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_two_sum.TwoSumTestCase&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
     </configuration>
-    <configuration name="MaxWealth" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MaxWealth" />
+    <configuration name="Python tests for test_two_sum.TwoSumTestCase.test_1" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="leetcode" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/two_sum" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_two_sum.TwoSumTestCase.test_1&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
     </configuration>
-    <configuration name="RunningSumOf1DArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="RunningSumOf1DArray" />
-      <module name="leetcode" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ShuffleTheArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ShuffleTheArray" />
-      <module name="leetcode" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="Application.RunningSumOf1DArray" />
-      <item itemvalue="Application.DefangIP" />
-      <item itemvalue="Application.GreatestNumber" />
-      <item itemvalue="Application.MaxWealth" />
-      <item itemvalue="Application.ShuffleTheArray" />
-    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ShuffleTheArray" />
-        <item itemvalue="Application.MaxWealth" />
-        <item itemvalue="Application.GreatestNumber" />
-        <item itemvalue="Application.DefangIP" />
-        <item itemvalue="Application.RunningSumOf1DArray" />
+        <item itemvalue="Python tests.Python tests for test_two_sum.TwoSumTestCase.test_1" />
+        <item itemvalue="Python tests.Python tests for test_two_sum.TwoSumTestCase" />
+        <item itemvalue="Python tests.Python tests for test_add_two_numbers.TwoAddTwoNumbers.test_1" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="e1a3332f-d780-44b7-bc16-c46a48a043ca" name="Default Changelist" comment="" />
-      <created>1613926961523</created>
+      <changelist id="e264ed39-4358-42d6-ad26-7c9db60f68e1" name="Changes" comment="" />
+      <created>1683494104115</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1613926961523</updated>
-      <workItem from="1613926962621" duration="2062000" />
-      <workItem from="1613940147293" duration="601000" />
-      <workItem from="1613994542543" duration="7747000" />
-      <workItem from="1614179512648" duration="2702000" />
-      <workItem from="1614256786018" duration="4161000" />
-      <workItem from="1614364962817" duration="91000" />
-      <workItem from="1614365087895" duration="3945000" />
-      <workItem from="1614369245612" duration="1202000" />
-      <workItem from="1617781795531" duration="2615000" />
-      <workItem from="1617901471400" duration="1874000" />
-      <workItem from="1617962933662" duration="2587000" />
-      <workItem from="1618236250521" duration="1983000" />
-      <workItem from="1618335332795" duration="759000" />
-      <workItem from="1618397576660" duration="2338000" />
-      <workItem from="1618500084987" duration="18000" />
-      <workItem from="1618500173779" duration="89000" />
-      <workItem from="1618500402228" duration="2562000" />
+      <updated>1683494104115</updated>
     </task>
-    <task id="LOCAL−00001" summary="Added completed challenges to repository and completed &quot;RomanToInteger&quot; Challenge.">
-      <created>1614180621092</created>
-      <option name="number" value="LOCAL−00001" />
-      <option name="presentableId" value="LOCAL−00001" />
-      <updated>1614180621092</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added completed challenges to repository and completed &quot;RomanToInteger&quot; Challenge." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added completed challenges to repository and completed &quot;RomanToInteger&quot; Challenge." />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/MaxWealth.java</url>
-          <line>37</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <breakpoint enabled="true" type="java-exception">
-          <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />
-          <option name="timeStamp" value="2" />
-        </breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

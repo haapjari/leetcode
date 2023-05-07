@@ -1,2 +1,5 @@
 run:
-	go run cmd/main.go
+	python3 setup.py
+
+test:
+	pytest tests/
