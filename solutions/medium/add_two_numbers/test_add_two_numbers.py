@@ -17,13 +17,14 @@ class Solution:
             If the sum is more than 10, result will overflow
         """
 
-        # Traverse through Linked List
-        curr = l1
-        while curr:
-            print(curr.val)
-            curr = curr.next
+        l3: ListNode
 
-        pass
+        while l1:
+            print(f"l1 value {l1.val}")
+            print(f"l2 value {l2.val}")
+
+            l1 = l1.next
+            l2 = l2.next
 
 
 class TestSolution(unittest.TestCase):
