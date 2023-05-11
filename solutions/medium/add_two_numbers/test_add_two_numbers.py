@@ -18,23 +18,25 @@ class Solution:
         """
 
         l3: ListNode
-
-        # Create a temp node.
         temp_node = ListNode()
-
-        # Keep track of the current node.
         curr_node = temp_node
+        carry = 0
 
-        # TODO: Handle the case, if the sum is bigger than 9.
         while l1 and l2:
             sum = l1.val + l2.val
 
-            # if 0 <= sum <= 9:
-            #     print("sum is inbetween 0-9")
-            # else:
-            #     print("sum is greater than 9")
+            if carry != 0:
+                sum = sum + carry
+                carry = 0
 
-            # print(f"sum {sum}")
+            if not 0 <= sum <= 9:
+                carry = sum - 9
+                # this is not correct and works on only cases, where
+                # the sum is 10.
+                # sum has to be the the last digit of the actual sum.
+                # i think also there is tens case, which has to be handled
+                sum = 0
+
             new = ListNode(sum)
             curr_node.next = new
             curr_node = new
@@ -44,31 +46,59 @@ class Solution:
 
         temp_node = temp_node.next
 
+        return temp_node
+
         # This is the current Linked List
-        while temp_node:
-            print(temp_node.val)
-            temp_node = temp_node.next
+        # while temp_node:
+        #     print(temp_node.val)
+        #     temp_node = temp_node.next
 
 
 class TestSolution(unittest.TestCase):
-    def test_addTwoNumbers(self):
-        # create example lists
-
+    def test_addTwoNumbers_case_1(self):
         l1 = ListNode(2, ListNode(4, ListNode(3)))
         l2 = ListNode(5, ListNode(6, ListNode(4)))
 
-        # calculate sum of two lists
         s = Solution()
         result_list = s.addTwoNumbers(l1, l2)
 
-        # convert result list to Python list
-        # result = []
-        # while result_list:
-        #     result.append(result_list.val)
-        #     result_list = result_list.next
+        result = []
+        while result_list:
+            result.append(result_list.val)
+            result_list = result_list.next
 
-        # # assert that the result is correct
-        # self.assertEqual(result, [7, 0, 8])
+        # assert that the result is correct
+        self.assertEqual(result, [7, 0, 8])
+
+    def test_addTwoNumbers_case_2(self):
+        l1 = ListNode(0)
+        l2 = ListNode(0)
+
+        s = Solution()
+        result_list = s.addTwoNumbers(l1, l2)
+
+        result = []
+        while result_list:
+            result.append(result_list.val)
+            result_list = result_list.next
+
+        # assert that the result is correct
+        self.assertEqual(result, [0])
+
+    def test_addTwoNumbers_case_3(self):
+        l1 = ListNode(9, ListNode(9, ListNode(9, ListNode(9, ListNode(9, ListNode(9, ListNode(9)))))))
+        l2 = ListNode(9, ListNode(9, ListNode(9, ListNode(9))))
+
+        s = Solution()
+        result_list = s.addTwoNumbers(l1, l2)
+
+        result = []
+        while result_list:
+            result.append(result_list.val)
+            result_list = result_list.next
+
+        # assert that the result is correct
+        self.assertEqual(result, [8,9,9,9,0,0,0,1])
 
 
 if __name__ == '__main__':
