@@ -9,32 +9,38 @@ class ListNode:
 
 class Solution:
     def addTwoNumbers(self, l1: ListNode, l2: ListNode) -> ListNode:
+
+        # Two Empty Strings to hold the LinkedList (l1, l2 respectively) values.
         l1_str, l2_str = "", ""
 
-        # Read the Values to Strings
-        while l1 and l2:
-            l1_str += str(l1.val)
-            l2_str += str(l2.val)
+        # Traverse through linked list.
+        while l1:
+            # Construct a string, append the nodes value to the beginning of the string.
+            # "1" + "23" = "123".
+            l1_str = str(l1.val) + l1_str
             l1 = l1.next
+
+        while l2:
+            l2_str = str(l2.val) + l2_str
             l2 = l2.next
 
-        # Reverse Strings, Convert to Int, Add Together, Convert Result to String and Reverse
-        l3 = str(int(l1_str[::-1]) + int(l2_str[::-1]))[::-1]
+        # Check if the strings are empty, in this case the value is not actually empty
+        # but is 0, so this has to be 0.
+        if not l1_str: l1_str = "0"
+        if not l2_str: l2_str = "0"
 
-        # Create Head (Empty Node) and Current Variable
-        # which points to the Empty Node.
+        sum_of_values = int(l1_str) + int(l2_str)
+
+        # Create an empty node for the head of resulting list.
         head = ListNode()
-        curr = head
+        current = head
 
-        # Loop through every character
-        # Create node with desired attributes
-        # Take the curr, mark the next field to point to the
-        # new node, and curr pointer to the fresh node (head moves)
-        for char in l3:
-            node = ListNode(int(char))
-            curr.next = node
-            curr = curr.next
+        # Loop the characters in reverse order.
+        for value in reversed(str(sum_of_values)):
+            current.next = ListNode(int(value))
+            current = current.next
 
+        # Return the List from next to the Head, since Head is empty.
         return head.next
 
 
