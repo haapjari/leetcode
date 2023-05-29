@@ -2,32 +2,33 @@ import unittest
 
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
-        """
-        Given a string s, find the length of the longest substring, without repeating characters.
-        Edge Cases:
-        """
+        longest = 0
 
-        # What is a substring (?)
-        # Substring a sequence of characters, without having duplicate characters.
-        # There has to be check in place, which checks, if the character has been processed already.
-        # Every possible substring has to be checked, to there has to be check for substring starting
-        # from every point of the string. (Substring starting from index 0, if thats longer than
-        # longest known substring, replace longest substring -> proceed to next index.)
+        i = 0
+        # Loop through the origin String.
+        while i < len(s):
+            # Substring to analyze is the current index and rest of the
+            # characters.
+            substring = s[i:]
 
-        seen = []
-        longest_substring_length = 0
+            # Loop through the substring, track the seen characters.
+            seen = []
+            for char in substring:
+                # If character has been seen at least once,
+                # stop analyzing the substring.
+                if char in seen:
+                   break
+                else:
+                    seen.append(char)
 
-        # this now goes through the all the substrings from index 0
-        # this actual just returns the amount of unique characters in a string
-        for char in s:
-            if char in seen:
-                continue
+            # Compute the longest unique characters withing the substring.
+            if longest < len(seen):
+                longest = len(seen)
 
-            print(char)
+            i += 1
 
-            seen.append(char)
-
-        return len(seen)
+        # Return the longest unique characters withing the substring.
+        return longest
 
 
 class TestSolution(unittest.TestCase):
@@ -38,19 +39,19 @@ class TestSolution(unittest.TestCase):
         s = "abcabcbb"
         expected_output = 3
         actual_output = self.solution.lengthOfLongestSubstring(s)
-    #     self.assertEqual(actual_output, expected_output, "Expected the length of longest substring to be 3")
+        self.assertEqual(actual_output, expected_output, "Expected the length of longest substring to be 3")
 
-    # def test_example2(self):
-    #     s = "bbbbb"
-    #     expected_output = 1
-    #     actual_output = self.solution.lengthOfLongestSubstring(s)
-    #     self.assertEqual(actual_output, expected_output, "Expected the length of longest substring to be 1")
+    def test_example2(self):
+         s = "bbbbb"
+         expected_output = 1
+         actual_output = self.solution.lengthOfLongestSubstring(s)
+         self.assertEqual(actual_output, expected_output, "Expected the length of longest substring to be 1")
 
-    # def test_example3(self):
-    #     s = "pwwkew"
-    #     expected_output = 3
-    #     actual_output = self.solution.lengthOfLongestSubstring(s)
-    #     self.assertEqual(actual_output, expected_output, "Expected the length of longest substring to be 3")
+    def test_example3(self):
+        s = "pwwkew"
+        expected_output = 3
+        actual_output = self.solution.lengthOfLongestSubstring(s)
+        self.assertEqual(actual_output, expected_output, "Expected the length of longest substring to be 3")
 
 
 if __name__ == "__main__":
