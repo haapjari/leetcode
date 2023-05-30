@@ -12,7 +12,16 @@ def removeDuplicates(nums: list) -> int:
         if num not in seen:
             seen.append(num)
 
-    print(seen)
+    i = 0
+    while i < len(seen):
+        nums[i] = seen[i]
+        i += 1
+
+    j = len(seen)
+    while j < len(nums):
+        nums[j] = "_"
+        j += 1
+
 
     return len(seen)
 
@@ -22,7 +31,8 @@ class RemoveDuplicatesTestCase(unittest.TestCase):
         expected = 2
         result = removeDuplicates(nums)
         self.assertEqual(result, expected)
-        self.assertListEqual(nums[:result], [1, 2])
+        # self.assertListEqual(nums[:result], [1, 2])
+        self.assertListEqual([1, 2], nums[:result])
 
     def test_2(self):
         nums = [0, 0, 1, 1, 1, 2, 2, 3, 3, 4]
