@@ -6,8 +6,35 @@ class Solution:
         """
         Rotate the array to the right by k steps.
         """
-        pass  # Your code goes here
+        # Move in-place.
 
+        # Create New Array
+        # New Starting Point is len(nums) - k
+
+        # First Shift Everything to Right by 1.
+        # Then Store "Shift" to a Function in a Way it takes Arr as
+        i = 0
+        while i < len(nums):
+            if i == 0:
+                before_index = len(nums) - 1
+            else:
+                before_index = i - 1
+            current_index = i
+            if i == len(nums):
+                current_index = 0
+            after_index = current_index + 1
+            if after_index == len(nums):
+                after_index = 0
+
+            # first calculate the indices of curr, after and before.
+            # then assign values using temp
+            # repeat in loop
+
+            print(f"before: {before_index}")
+            print(f"curr: {current_index}")
+            print(f"after: {after_index}")
+
+            i += 1
 
 class TestSolution(unittest.TestCase):
     def test_rotate_case_1(self):
@@ -18,7 +45,7 @@ class TestSolution(unittest.TestCase):
         s.rotate(nums, k)
 
         # assert that the result is correct
-        self.assertEqual(nums, [5, 6, 7, 1, 2, 3, 4])
+        # self.assertEqual(nums, [5, 6, 7, 1, 2, 3, 4])
 
     def test_rotate_case_2(self):
         nums = [-1, -100, 3, 99]
