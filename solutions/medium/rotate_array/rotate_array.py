@@ -13,28 +13,23 @@ class Solution:
 
         # First Shift Everything to Right by 1.
         # Then Store "Shift" to a Function in a Way it takes Arr as
-        i = 0
-        while i < len(nums):
-            if i == 0:
-                before_index = len(nums) - 1
-            else:
-                before_index = i - 1
-            current_index = i
-            if i == len(nums):
-                current_index = 0
-            after_index = current_index + 1
-            if after_index == len(nums):
-                after_index = 0
+        counter = 0
+        iterations = len(nums)
+        curr = len(nums) - k
+        while counter < iterations:
+            before = curr - 1
+            after = curr + 1
+            if curr == len(nums):
+                curr = 0
 
-            # first calculate the indices of curr, after and before.
-            # then assign values using temp
-            # repeat in loop
+            # before and after roll to 7, solve this
 
-            print(f"before: {before_index}")
-            print(f"curr: {current_index}")
-            print(f"after: {after_index}")
+            print(f"before index: {before}")
+            print(f"current index: {curr}")
+            print(f"after index: {after}")
 
-            i += 1
+            curr += 1
+            counter += 1
 
 class TestSolution(unittest.TestCase):
     def test_rotate_case_1(self):
