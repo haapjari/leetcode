@@ -6,30 +6,41 @@ class Solution:
         """
         Rotate the array to the right by k steps.
         """
-        # Move in-place.
 
-        # Create New Array
-        # New Starting Point is len(nums) - k
+        def reverse_list(list):
+            start = 0
+            end = len(list) - 1
 
-        # First Shift Everything to Right by 1.
-        # Then Store "Shift" to a Function in a Way it takes Arr as
-        counter = 0
-        iterations = len(nums)
-        curr = len(nums) - k
-        while counter < iterations:
-            before = curr - 1
-            after = curr + 1
-            if curr == len(nums):
-                curr = 0
+            while start < end:
+                list[start], list[end] = list[end], list[start]
+                start += 1
+                end -= 1
 
-            # before and after roll to 7, solve this
+        # This gives the starting position. Modulo
+        # makes sure, that the k is always in between
+        # the correct length.
+        x = k % len(nums)
 
-            print(f"before index: {before}")
-            print(f"current index: {curr}")
-            print(f"after index: {after}")
+        reverse_list(nums)
 
-            curr += 1
-            counter += 1
+        tmp = nums[:x]
+        tmp.reverse()
+
+        print(tmp)
+
+        tmp = nums[x:]
+        tmp.reverse()
+
+        print(tmp)
+
+        #reverse_list(nums[:x])
+        #reverse_list(nums[x:])
+
+        #print(nums)
+
+        # reverse the list
+        # split to k
+        # reverse the splitted parts
 
 class TestSolution(unittest.TestCase):
     def test_rotate_case_1(self):
