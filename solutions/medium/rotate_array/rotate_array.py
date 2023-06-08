@@ -6,41 +6,19 @@ class Solution:
         """
         Rotate the array to the right by k steps.
         """
-
-        def reverse_list(list):
-            start = 0
-            end = len(list) - 1
-
-            while start < end:
-                list[start], list[end] = list[end], list[start]
-                start += 1
-                end -= 1
-
-        # This gives the starting position. Modulo
-        # makes sure, that the k is always in between
-        # the correct length.
         x = k % len(nums)
 
-        reverse_list(nums)
+        # Call a Slice Operation "::", and in reverse order "-1", end up reversing the list.
+        # Don't assign new variable, instead refer to original variable with all elements,
+        # end up not allocating more space, and modifying this in place.
+        nums[:] = nums[::-1]
 
-        tmp = nums[:x]
-        tmp.reverse()
+        # Access the elements until x and reverse them.
+        nums[:x] = nums[:x][::-1]
 
-        print(tmp)
+        # Access the elements after x and reverse them.
+        nums[x:] = nums[x:][::-1]
 
-        tmp = nums[x:]
-        tmp.reverse()
-
-        print(tmp)
-
-        #reverse_list(nums[:x])
-        #reverse_list(nums[x:])
-
-        #print(nums)
-
-        # reverse the list
-        # split to k
-        # reverse the splitted parts
 
 class TestSolution(unittest.TestCase):
     def test_rotate_case_1(self):
@@ -50,8 +28,7 @@ class TestSolution(unittest.TestCase):
         s = Solution()
         s.rotate(nums, k)
 
-        # assert that the result is correct
-        # self.assertEqual(nums, [5, 6, 7, 1, 2, 3, 4])
+        self.assertEqual(nums, [5, 6, 7, 1, 2, 3, 4])
 
     def test_rotate_case_2(self):
         nums = [-1, -100, 3, 99]
@@ -60,7 +37,6 @@ class TestSolution(unittest.TestCase):
         s = Solution()
         s.rotate(nums, k)
 
-        # assert that the result is correct
         self.assertEqual(nums, [3, 99, -1, -100])
 
     def test_rotate_case_3(self):
@@ -70,7 +46,6 @@ class TestSolution(unittest.TestCase):
         s = Solution()
         s.rotate(nums, k)
 
-        # assert that the result is correct
         self.assertEqual(nums, [3, 1, 2])
 
 
