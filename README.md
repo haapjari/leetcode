@@ -11,9 +11,10 @@
 - https://leetcode.com/problems/remove-duplicates-from-sorted-array/
 - https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/
 - https://leetcode.com/problems/rotate-array/
+- https://leetcode.com/problems/contains-duplicate/
 
 ## WIP
 
-- https://leetcode.com/problems/contains-duplicate/
+- https://leetcode.com/problems/single-number/
 
 ---
