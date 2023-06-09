@@ -18,3 +18,9 @@
 - https://leetcode.com/problems/single-number/
 
 ---
+
+## How-To: Run with PyTest
+
+`pytest-3 -vs solutions/easy/single_number/single_number.py`
+
+---
