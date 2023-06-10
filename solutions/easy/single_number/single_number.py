@@ -8,14 +8,12 @@ def singleNumber(nums):
     """
     # Implement your solution here
 
-    print()
-
-    seen = None
-    for i in range(len(nums)):
-         
-        
-
-
+    nums.sort()
+    for i in range(len(nums) - 1):
+        if len(nums) == 1:
+            return nums[i]
+        if nums[i] != nums[i + 1]:
+            return nums[i]
 
 
 class SingleNumberTestCase(unittest.TestCase):
@@ -23,25 +21,25 @@ class SingleNumberTestCase(unittest.TestCase):
         nums = [2, 2, 1]
         expected = 1
         result = singleNumber(nums)
-        # self.assertEqual(result, expected)
+        self.assertEqual(result, expected)
 
-#    def test_2(self):
-#        nums = [4, 1, 2, 1, 2]
-#        expected = 4
-#        result = singleNumber(nums)
-#        self.assertEqual(result, expected)
-#
-#    def test_3(self):
-#        nums = [1]
-#        expected = 1
-#        result = singleNumber(nums)
-#        self.assertEqual(result, expected)
-#
-#    def test_4(self):
-#        nums = [5, 7, 5, 6, 6]
-#        expected = 7
-#        result = singleNumber(nums)
-#        self.assertEqual(result, expected)
+    def test_2(self):
+        nums = [4, 1, 2, 1, 2]
+        expected = 4
+        result = singleNumber(nums)
+        self.assertEqual(result, expected)
+
+    def test_3(self):
+        nums = [1]
+        expected = 1
+        result = singleNumber(nums)
+        self.assertEqual(result, expected)
+
+    def test_4(self):
+        nums = [5, 7, 5, 6, 6]
+        expected = 7
+        result = singleNumber(nums)
+        self.assertEqual(result, expected)
 
 
 if __name__ == '__main__':
