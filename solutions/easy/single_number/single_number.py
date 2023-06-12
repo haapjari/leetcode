@@ -1,20 +1,20 @@
 import unittest
 
 # WIP: https://www.youtube.com/watch?v=qMPX1AOa83k
+# Look up the XOR thing.
+# This function has time complexity of ON^2
 
 def singleNumber(nums):
-    """
-    :type nums: List[int]
-    :rtype: int
-    """
-    # Implement your solution here
+    def calcCount(list, val):
+        c = 0
+        for elem in list:
+            if elem == val:
+                c += 1
+        return c
 
-    nums.sort()
-    for i in range(len(nums) - 1):
-        if len(nums) == 1:
-            return nums[i]
-        if nums[i] != nums[i + 1]:
-            return nums[i]
+    for num in nums:
+        if calcCount(nums, num) == 1:
+            return num
 
 
 class SingleNumberTestCase(unittest.TestCase):
