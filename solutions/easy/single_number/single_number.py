@@ -1,9 +1,5 @@
 import unittest
 
-# WIP: https://www.youtube.com/watch?v=qMPX1AOa83k
-# Look up the XOR thing.
-# This function has time complexity of ON^2
-
 def singleNumber(nums):
     def calcCount(list, val):
         c = 0
