@@ -3,14 +3,18 @@ from typing import List
 
 
 def plusOne(digits: List[int]) -> List[int]:
-    """
-    :type digits: List[int]
-    :rtype: List[int]
-    """
+    temp = ""
+    l = []
 
-    # TODO: Implement the solution here.
+    for digit in digits:
+        temp += str(digit)
 
-    pass
+    temp = int(temp) + 1
+
+    for char in str(temp):
+        l.append(int(char))
+
+    return l
 
 
 class PlusOneTestCase(unittest.TestCase):

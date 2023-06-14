@@ -14,10 +14,11 @@
 - https://leetcode.com/problems/contains-duplicate/
 - https://leetcode.com/problems/single-number/
 - https://leetcode.com/problems/intersection-of-two-arrays-ii/
+- https://leetcode.com/problems/plus-one/
 
 ## WIP
 
-- https://leetcode.com/problems/plus-one/
+- TBD
 
 ---
 
