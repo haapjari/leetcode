@@ -13,26 +13,24 @@ def intersect(nums1: List[int], nums2: List[int]) -> List[int]:
     # check which list is smaller
     # only check the smaller values
     # create new array and return it
-    length = None
-    smallerList = []
-    biggerList = []
-    retList = []
-    if len(nums1) > len(nums2):
-        length = len(nums2)
-        smallerList = nums2
-        biggerList = nums1
+
+    intersection = []
+
+    if len(nums1) < len(nums2):
+        smaller_list = nums1
+        larger_list = nums2
     else:
-        length = len(nums1)
-        smallerList = nums1
-        biggerList = nums2
+        smaller_list = nums2
+        larger_list = nums1
 
-    i = 0
-    while i < length:
-        if smallerList[i] in biggerList:
-            retList.append(smallerList[i])
-        i += 1
+    for i in range(len(smaller_list)):
+        print(smaller_list[i])
+        if smaller_list[i] in larger_list:
+            # Return already processed values.
+            larger_list.remove(smaller_list[i])
+            intersection.append(smaller_list[i])
 
-    return retList
+    return intersection
 
 class IntersectTestCase(unittest.TestCase):
     def test_1(self):
@@ -46,6 +44,13 @@ class IntersectTestCase(unittest.TestCase):
         nums1 = [4, 9, 5]
         nums2 = [9, 4, 9, 8, 4]
         expected = [4, 9]
+        result = intersect(nums1, nums2)
+        self.assertCountEqual(result, expected)
+
+    def test_3(self):
+        nums1 = [3,1,2]
+        nums2 = [1,1]
+        expected = [1]
         result = intersect(nums1, nums2)
         self.assertCountEqual(result, expected)
 
