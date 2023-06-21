@@ -15,10 +15,11 @@
 - https://leetcode.com/problems/single-number/
 - https://leetcode.com/problems/intersection-of-two-arrays-ii/
 - https://leetcode.com/problems/plus-one/
+- https://leetcode.com/problems/move-zeroes/
 
 ## WIP
 
-- https://leetcode.com/problems/move-zeroes/
+- TBD
 
 ---
 
