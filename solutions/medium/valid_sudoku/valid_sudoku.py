@@ -13,7 +13,8 @@ class Solution:
         # Loop the Board "Subgrid" at a time. -> Validate
         # If validations pass -> True
 
-        return self.validate_rows(board)
+        # return self.validate_rows(board)
+        self.validate_columns(board)
 
     def validate_rows(self, board) -> bool:
         """
@@ -33,7 +34,13 @@ class Solution:
         """
         Validates that each column of the board contains the digits 1-9 without repetition.
         """
-        pass  # Implementation here
+        length = len(board[0])
+        i = 0
+        while i < length:
+            print("column:")
+            for row in board:
+                print(row[i])
+            i += 1
 
     def validate_subgrids(self, board) -> bool:
         """
