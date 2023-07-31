@@ -13,19 +13,21 @@ class Solution:
         # Loop the Board "Subgrid" at a time. -> Validate
         # If validations pass -> True
 
-        if self.validate_rows(board):
-            return True
-
+        return self.validate_rows(board)
 
     def validate_rows(self, board) -> bool:
         """
         Validates that each row of the board contains the digits 1-9 without repetition.
         """
-
         for row in board:
-            print("row")
+            seen = []
             for elem in row:
-                print(elem)
+                if elem != ".":
+                    seen.append(elem)
+                if seen.count(elem) > 1:
+                    return False
+
+        return True
 
     def validate_columns(self, board) -> bool:
         """
@@ -55,6 +57,7 @@ class TestSolution(unittest.TestCase):
             [".", ".", ".", ".", "8", ".", ".", "7", "9"]
         ]
         result = s.isValidSudoku(board)
+        print(result)
         # self.assertTrue(s.isValidSudoku(board))
 
     def test_isValidSudoku_case_2(self):

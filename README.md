@@ -19,7 +19,7 @@
 
 ## WIP
 
-- TBD
+- https://leetcode.com/problems/valid-sudoku/
 
 ---
 
