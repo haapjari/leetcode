@@ -7,59 +7,50 @@ class Solution:
         """
         Determine if a 9x9 Sudoku board is valid.
         """
+        # Function to check if numbers are unique (excluding '.')
+        def valid(nums):
+            filtered_nums = []
+            # Filter out the "." characters.
+            for num in nums:
+                if num != '.':
+                    filtered_nums.append(num)
+            nums = filtered_nums
 
-        # Loop the Board "Row" at a time. -> Validate
-        # Loop the Board "Column" at a time. -> Validate
-        # Loop the Board "Subgrid" at a time. -> Validate
-        # If validations pass -> True
+            # Compare the lengths. Set doesn't allow anything, but unique numbers
+            # this is why, the length of a set of nums, includes only the unique
+            # numbers. If the lengths are different, that means that the filtered
+            # nums includes non-unique numbers.
+            return len(nums) == len(set(nums))
 
-        # return self.validate_rows(board)
-        # return self.validate_columns(board)
-        self.validate_subgrids(board)
+        # Check the Rows
+        # for row in board:
+            # if not valid(row):
+            #    return False
 
-    def validate_rows(self, board) -> bool:
-        """
-        Validates that each row of the board contains the digits 1-9 without repetition.
-        """
-        for row in board:
-            seen = []
-            for elem in row:
-                if elem != ".":
-                    seen.append(elem)
-                if seen.count(elem) > 1:
-                    return False
-
-        return True
-
-    def validate_columns(self, board) -> bool:
-        """
-        Validates that each column of the board contains the digits 1-9 without repetition.
-        """
-        length = len(board[0])
+        # STUDY THE SOLUTION
+        # Check Columns
         i = 0
-        while i < length:
-            seen = []
-            for row in board:
-                if row[i] != ".":
-                    seen.append(row[i])
-                if seen.count(row[i]) > 1:
-                    return False
+        while i < len(board):
+            print(board[i])
+
             i += 1
 
+
+        #for i in range(9):
+           #print(board[i])
+           #for y in range[9]:
+               #print(board[i][y])
+           #if not is_valid([board[row][col] for row in range(9)]):
+           # return False
+
+        # STUDY THE SOLUTION
+        # Check Sub-Grids
+        #for i in range(0, 9, 3):
+        #    for j in range(0, 9, 3):
+        #        if not is_valid([board[x][y] for x in range(i, i + 3) for y in range(j, j + 3)]):
+        #            return False
+
         return True
-
-    def validate_subgrids(self, board) -> bool:
-        """
-        Validates that each 3x3 subgrid of the board contains the digits 1-9 without repetition.
-        """
-        i = 0
-        j = 0
-        while i < len(board[j]):
-            print(board[j][i])
-
-            i += 1
-            j += 1
-
 
 class TestSolution(unittest.TestCase):
     def test_isValidSudoku_case_1(self):
