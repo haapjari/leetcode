@@ -24,31 +24,42 @@ class Solution:
 
         # Check the Rows
         # for row in board:
-            # if not valid(row):
-            #    return False
+        #     if not valid(row):
+        #        return False
 
-        # STUDY THE SOLUTION
         # Check Columns
-        i = 0
-        while i < len(board):
-            print(board[i])
-
-            i += 1
-
-
         #for i in range(9):
-           #print(board[i])
-           #for y in range[9]:
-               #print(board[i][y])
-           #if not is_valid([board[row][col] for row in range(9)]):
-           # return False
+        #    for j in range(9):
+        #        if not valid(board[j][i]):
+        #            return False
 
         # STUDY THE SOLUTION
         # Check Sub-Grids
-        #for i in range(0, 9, 3):
-        #    for j in range(0, 9, 3):
-        #        if not is_valid([board[x][y] for x in range(i, i + 3) for y in range(j, j + 3)]):
-        #            return False
+        # For every possible 3x3 square in the 9x9 board:
+
+        # Loop through values of 0-9, with steps of 3, so we're taking indices 0, 3 and 6.
+        for i in range(0, 9, 3):
+            print(board[i])
+            #for j in range(0, 9, 3):  # j takes on values: 0, 3, 6
+
+                # Initialize an empty list to collect the values in the current 3x3 square.
+                #square_values = []
+
+                # Iterate over the rows of the current 3x3 square.
+                #for x in range(i, i + 3):  # If i=0, x takes on values: 0, 1, 2
+                    # If i=3, x takes on values: 3, 4, 5
+                    # and so on...
+
+                    # Iterate over the columns of the current 3x3 square.
+                    #for y in range(j, j + 3):  # Analogous to the x loop
+
+                        # Add the value at board[x][y] to our list.
+                        #value = board[x][y]
+                        #square_values.append(value)
+
+                # After collecting all values in the 3x3 square, check if they're valid.
+                #if not valid(square_values):
+                #    return False
 
         return True
 
