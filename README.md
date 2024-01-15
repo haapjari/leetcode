@@ -20,7 +20,6 @@
 ## WIP
 
 - https://leetcode.com/problems/valid-sudoku/
-- Ask from ChatGPT to explain in laymans terms, how to solve this.
  
 ---
 

@@ -1,5 +1,6 @@
 import unittest
 
+
 def singleNumber(nums):
     def calcCount(list, val):
         c = 0
