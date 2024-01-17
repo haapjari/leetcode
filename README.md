@@ -16,10 +16,11 @@
 - https://leetcode.com/problems/intersection-of-two-arrays-ii/
 - https://leetcode.com/problems/plus-one/
 - https://leetcode.com/problems/move-zeroes/
+- https://leetcode.com/problems/valid-sudoku/
 
 ## WIP
 
-- https://leetcode.com/problems/valid-sudoku/
+- https://leetcode.com/problems/rotate-image/
  
 ---
 

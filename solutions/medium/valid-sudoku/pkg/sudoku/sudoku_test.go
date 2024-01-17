@@ -1,8 +1,9 @@
 package sudoku_test
 
 import (
-	"leetcode/pkg/sudoku"
 	"testing"
+
+	"leetcode/pkg/sudoku"
 
 	"github.com/stretchr/testify/assert"
 )
@@ -35,6 +36,22 @@ func TestIsValidSudoku(t *testing.T) {
 			{'.', '6', '.', '.', '.', '.', '2', '8', '.'},
 			{'.', '.', '.', '4', '1', '9', '.', '.', '5'},
 			{'.', '.', '.', '.', '8', '.', '.', '7', '9'},
+		}
+
+		assert.Equal(t, false, sudoku.IsValidSudoku(board))
+	})
+
+	t.Run("sudoku test case", func(t *testing.T) {
+		board := [][]byte{
+			{'.', '.', '.', '.', '5', '.', '.', '1', '.'},
+			{'.', '4', '.', '3', '.', '.', '.', '.', '.'},
+			{'.', '.', '.', '.', '.', '3', '.', '.', '1'},
+			{'8', '.', '.', '.', '.', '.', '.', '2', '.'},
+			{'.', '.', '2', '.', '7', '.', '.', '.', '.'},
+			{'1', '5', '.', '.', '.', '.', '.', '.', '.'},
+			{'.', '.', '.', '.', '.', '2', '.', '.', '.'},
+			{'.', '2', '.', '9', '.', '.', '.', '.', '.'},
+			{'.', '.', '4', '.', '.', '.', '.', '.', '.'},
 		}
 
 		assert.Equal(t, false, sudoku.IsValidSudoku(board))
