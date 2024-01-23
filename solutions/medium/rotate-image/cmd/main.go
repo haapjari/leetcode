@@ -1,7 +1,16 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"leetcode/pkg/rotate"
+)
 
 func main() {
-	fmt.Println("hello world")
+	matrix := [][]int{
+		{1, 2, 3},
+		{4, 5, 6},
+		{7, 8, 9},
+	}
+
+	fmt.Println(rotate.Rotate(matrix))
 }
