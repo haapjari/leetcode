@@ -1,7 +1,8 @@
 # LeetCode Submissions 
 
+- Part of the problems are solved with Go and part are solved with Python.
 - Profile: https://leetcode.com/haapjari
-- LeetCode Top Interview Questions: https://leetcode.com/explore/interview/card/top-interview-questions-easy/
+- LeetCode Top Interview 150: https://leetcode.com/studyplan/top-interview-150/
  
 ## Completed
 
@@ -20,8 +21,8 @@
 
 ## WIP
 
-- https://leetcode.com/problems/rotate-image/
- 
+- TBD
+
 ---
 
 ## How-To: Run with PyTest
